@@ -1,0 +1,105 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.review-list {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.highlight {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Adjust based on positioning */
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #423f3f transparent transparent transparent;
+}
+
+.highlight:hover .tooltip {
+  visibility: visible;
+}
+.reviewer-name {
+  font-weight: bold;
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+.wrote-at {
+  font-weight: lighter;
+}
+
+.stars {
+  color: rgb(233, 227, 80);
+  font-size: 10px;
+}
+.user-Info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+#user {
+  font-size: 20px;
+  padding-top: 6px;
+  margin-top: 6px;
+  background-color: rgb(207, 207, 207);
+  padding: 7px;
+  border-radius: 22px;
+  height: 18px;
+}
+.user-data {
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.starAndDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.date {
+  font-size: 10px;
+  margin-left: 10px;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.review-item {
+  width: 100%;
+}
+.icon{
+  padding-left: 5px;
+  font-size: 14px;
+}
